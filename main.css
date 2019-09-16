@@ -1,3 +1,21 @@
 body {
     background-color: thistle;
 }
+
+h1  {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    display: flex;
+    flex: 0 0 content;
+}
