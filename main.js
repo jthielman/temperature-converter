@@ -18,8 +18,16 @@ const showTemp = () => {
     showOnPage('converted', convertTemp());
 }
 
+const hitEnter = (e) => {
+    if (e.which === 13) {
+        e.preventDefault();
+        showTemp();
+    }
+}
+
 const init = () => {
     document.getElementById('big-button').addEventListener('click', showTemp);
+    document.getElementById('numIn').addEventListener('keypress', hitEnter);
 }
 
 init();
