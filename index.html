@@ -16,7 +16,7 @@
         <div class="row">
 
             <div class="input-group mb-3 col">
-                <input type="number" class="form-control" placeholder="Temperature" aria-label="Temperature" aria-describedby="button-addon2">
+                <input id="numIn" type="number" class="form-control" placeholder="Temperature" aria-label="Temperature" aria-describedby="button-addon2">
                 <div class="input-group-append">
                     <button type="button" class="btn btn-secondary">Clear</button>
                 </div>
@@ -26,15 +26,18 @@
         <div id="convert-to" class="row">
             <div class="btn-group btn-group-toggle row" data-toggle="buttons">
                 <label class="btn btn-primary active">
-                    <input type="radio" name="options" id="celsius" autocomplete="off" checked> Celsius
+                    <input type="radio" name="options" id="celsius" value="celsius" autocomplete="off" checked> Celsius
                 </label>
                 <label class="btn btn-primary">
-                    <input type="radio" name="options" id="fahrenheit" autocomplete="off"> Fahrenheit
+                    <input type="radio" name="options" id="fahrenheit" value="fahrenheit" autocomplete="off"> Fahrenheit
                 </label>
             </div>
         </div>
+        <div id="big-button">
+            <button type="button" class="btn btn-primary btn-lg">Convert!</button>
+        </div>
         <div id="resultbox" class="row">
-            <h1 id="converted">42</h1>
+            <h1 id="converted"></h1>
         </div>
     </div>
     <script src="./main.js"></script>
