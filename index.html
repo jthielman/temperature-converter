@@ -10,16 +10,21 @@
 </head>
 <body>
     <div class="container">
-        <h1>Temperature to Convert:</h1>
-        <div class="input-group mb-3">
-            <input type="number" class="form-control" placeholder="Temperature" aria-label="Temperature" aria-describedby="button-addon2">
-            <div class="input-group-append">
-                <button type="button" class="btn btn-secondary">Clear</button>
+        <div class="row">
+            <h1 class="col">Temperature to Convert:</h1>
+        </div>
+        <div class="row">
+
+            <div class="input-group mb-3 col">
+                <input type="number" class="form-control" placeholder="Temperature" aria-label="Temperature" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-secondary">Clear</button>
+                </div>
             </div>
         </div>
-        <div id="convert-to">
-            <h2>Convert to:</h2>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <h2 class="row">Convert to:</h2>
+        <div id="convert-to" class="row">
+            <div class="btn-group btn-group-toggle row" data-toggle="buttons">
                 <label class="btn btn-primary active">
                     <input type="radio" name="options" id="celsius" autocomplete="off" checked> Celsius
                 </label>
@@ -27,6 +32,9 @@
                     <input type="radio" name="options" id="fahrenheit" autocomplete="off"> Fahrenheit
                 </label>
             </div>
+        </div>
+        <div id="resultbox" class="row">
+            <h1 id="converted">42</h1>
         </div>
     </div>
     <script src="./main.js"></script>

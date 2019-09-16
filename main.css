@@ -4,10 +4,12 @@ body {
 
 h1  {
     text-align: center;
+    margin: .5em;
 }
 
 h2 {
     text-align: center;
+    margin: .5em;
 }
 
 .btn-group {
@@ -18,4 +20,25 @@ h2 {
 label {
     display: flex;
     flex: 0 0 content;
+}
+
+#resultbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em;
+    border: 3px solid black;
+    width: 40%;
+    height: 10em;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#converted {
+    text-align: center;
 }
