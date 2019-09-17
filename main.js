@@ -25,9 +25,14 @@ const hitEnter = (e) => {
     }
 }
 
+const clearField = () => {
+    document.getElementById('numIn').value = '';
+}
+
 const init = () => {
     document.getElementById('big-button').addEventListener('click', showTemp);
     document.getElementById('numIn').addEventListener('keypress', hitEnter);
+    document.getElementById('clear').addEventListener('click', clearField);
 }
 
 init();
