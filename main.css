@@ -12,14 +12,9 @@ h2 {
     margin: .5em;
 }
 
-.btn-group {
-    display: flex;
-    justify-content: center;
-}
-
-label {
-    display: flex;
-    flex: 0 0 content;
+input {
+    width: 1.5em;
+    height: 1.5em;
 }
 
 #resultbox {
