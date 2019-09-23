@@ -24,13 +24,12 @@
         </div>
         <h2 class="row">Convert to:</h2>
         <div id="convert-to" class="row">
-            <div class="btn-group btn-group-toggle row" data-toggle="buttons">
-                <label class="btn btn-primary">
-                    <input type="radio" name="options" id="celsius" value="celsius" autocomplete="off" class="btn-group-toggle" checked> Celsius
-                </label>
-                <label class="btn btn-primary">
-                    <input type="radio" name="options" id="fahrenheit" value="fahrenheit" autocomplete="off" class="btn-group-toggle"> Fahrenheit
-                </label>
+            <div id="radios" class="row" >
+                <input type="radio" name="options" id="celsius" value="celsius" checked>
+                <label class="col" for="celsius">Celsius</label>
+
+                <input type="radio" name="options" id="fahrenheit" value="fahrenheit" >
+                <label class="col" for="fahrenheit">Fahrenheit</label>
             </div>
         </div>
         <div id="big-button">
