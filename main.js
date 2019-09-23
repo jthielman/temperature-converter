@@ -16,6 +16,7 @@ const convertTemp = () => {
 
 const showTemp = () => {
     showOnPage('converted', convertTemp());
+    tempColors();
 }
 
 const hitEnter = (e) => {
@@ -27,6 +28,28 @@ const hitEnter = (e) => {
 
 const clearField = () => {
     document.getElementById('numIn').value = '';
+}
+
+const tempColors = () => {
+    const convertedTemp = document.getElementById('converted');
+    const celsius = document.getElementById('celsius');
+    if (celsius.checked) {
+        if (convertedTemp.innerHTML < 0) {
+            convertedTemp.className = 'cold';
+        } else if (convertedTemp.innerHTML > 32){
+            convertedTemp.className = 'hot';
+        } else {
+            convertedTemp.className = 'just-right';
+        }
+    } else {
+        if (convertedTemp.innerHTML < 32) {
+            convertedTemp.className = 'cold';
+        } else if (convertedTemp.innerHTML > 90) {
+            convertedTemp.className = 'hot';
+        } else {
+            convertedTemp.className = 'just-right';
+        }
+    }
 }
 
 const init = () => {
